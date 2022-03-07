@@ -52,11 +52,13 @@ jobs:
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
-    when: 
-      not:
+    when:
         << pipeline.parameters.run-reg>>
     jobs:
       - myJob
   actual:
+    when: 
+      not:
+        << pipeline.parameters.run-reg>>
     jobs:
       - build
