@@ -1,0 +1,5 @@
+steps:
+  - run:
+      name: command1
+      command:
+        echo "running command"
