@@ -1,2 +1,5 @@
+when:
+  equal: [ circleci-project-setup, << pipeline.parameters.run-reg >>]
+
 jobs:
   - command1

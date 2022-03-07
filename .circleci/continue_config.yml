@@ -1,0 +1,17 @@
+jobs:
+  sampleJob:
+      steps:
+        - run:
+            name: command1
+            command:
+                echo "running command"
+parameters:
+  run-reg:
+    type: boolean
+    default: false
+version:2.1
+workflows:
+    myWrkFlow:
+         jobs:
+             - sampleJob
+
