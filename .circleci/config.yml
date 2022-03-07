@@ -54,4 +54,7 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     when: << pipeline.parameters.run-reg>>
     jobs:
+      - myJob
+  actual:
+    jobs:
       - build
